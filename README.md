@@ -23,7 +23,7 @@ Das Addon überwacht den Netzwerkverkehr im Browser und erfasst alle `.ts`-Datei
 - **Schnelles Laden**: Überspringt automatisch durch das Video, um alle Segmente schnell zu laden.
 - **Live-Statusanzeige**: Zeigt die Anzahl der erfassten Dateien und die geschätzte Gesamtdauer an.
 - **Zusammenführen von Segmenten**: Fügt alle erfassten `.ts`-Dateien zu einer einzigen Videodatei zusammen.
-- **Speichern als MP4**: Die zusammengefügte Datei wird als `.mp4` gespeichert.
+- **Speichern als MP4**: Die zusammengefügte Datei wird als `.mp4` gespeichert. (noch nicht funktional)
 
 ---
 
