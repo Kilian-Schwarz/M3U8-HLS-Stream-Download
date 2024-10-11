@@ -1,40 +1,51 @@
 {
-    "manifest_version": 2,
-    "name": "M3U8/HLS-Stream-Download - TS File Recorder",
-    "version": "1.5",
-    "description": "Automatisches Aufzeichnen, Herunterladen und Zusammenführen von .ts-Dateien zu einem einzelnen Video from Kilian Schwarz",
-    "permissions": [
-      "activeTab",
-      "webRequest",
-      "webRequestBlocking",
-      "<all_urls>",
-      "downloads",
-      "tabs",
-      "storage"
-    ],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-    },
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-    },
-    "icons": {
+  "manifest_version": 2,
+  "name": "TS File Recorder",
+  "version": "1.6",
+  "description": "Automatisches Aufzeichnen, Herunterladen und Zusammenführen von .ts-Dateien zu einem einzelnen Video.",
+  "author": "Kilian Schwarz",
+  "homepage_url": "https://github.com/Kilian-Schwarz/M3U8-HLS-Stream-Download",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "downloads",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
       "16": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["contentScript.js"],
-        "run_at": "document_end"
-      }
-    ],
-    "web_accessible_resources": ["contentScript.js"]
-  }
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": ["contentScript.js"],
+  "applications": {
+    "gecko": {
+      "id": "ts-file-recorder@example.com",
+      "strict_min_version": "68.0"
+    }
+  },
+  "license": "MIT",
+  "version_name": "1.6 - Initial public release with MP4 support",
+  "update_url": "https://github.com/Kilian-Schwarz/M3U8-HLS-Stream-Download/releases"
+}
