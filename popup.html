@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TS File Recorder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 250px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #status {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    #progressBar {
+      width: 100%;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    #progressBar div {
+      height: 20px;
+      background-color: #4caf50;
+      width: 0%;
+      transition: width 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <button id="startSkipping">Schnelles Laden starten</button>
+  <button id="stopRecording">Aufnahme stoppen</button>
+  <p id="status">Status: Aufnahme läuft... Gesamtdauer: 00:00:00</p>
+  <div id="progressBar"><div></div></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
