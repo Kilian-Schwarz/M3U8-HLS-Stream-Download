@@ -2,20 +2,9 @@ TS File Recorder
 
 Ein Firefox-Addon zum automatischen Aufzeichnen, Herunterladen und Zusammenführen von .ts-Dateien zu einem einzelnen Video.
 
-Inhaltsverzeichnis
-
-	•	Überblick
-	•	Funktionsweise
-	•	Funktionen
-	•	Installation
-	•	Verwendung
-	•	Rechtlicher Hinweis
-	•	Haftungsausschluss
-	•	Lizenz
-
 Überblick
 
-TS File Recorder ist ein Firefox-Addon, das automatisch .ts-Dateien (Transport Stream) erfasst, die beim Abspielen von gestreamten Videos geladen werden. Es fügt diese Dateien zusammen und speichert das Ergebnis als einzelne Videodatei. Dies ist nützlich, um gestreamte Inhalte lokal zu speichern.
+TS File Recorder ist ein Firefox-Addon, das automatisch .ts-Dateien (Transport Stream) erfasst, die beim Abspielen von gestreamten Videos geladen werden. Es fügt diese Dateien zusammen und speichert das Ergebnis als einzelne Videodatei. Dies kann nützlich sein, um gestreamte Inhalte für den persönlichen Gebrauch lokal zu speichern.
 
 Funktionsweise
 
@@ -23,50 +12,48 @@ Das Addon überwacht den Netzwerkverkehr im Browser und erfasst alle .ts-Dateien
 
 Funktionen
 
-	•	Automatische Aufnahme: Beginnt automatisch mit der Erfassung von .ts-Dateien, sobald eine Webseite geladen wird.
-	•	Schnelles Laden: Überspringt automatisch durch das Video, um alle Segmente schnell zu laden.
-	•	Live-Statusanzeige: Zeigt die Anzahl der erfassten Dateien und die geschätzte Gesamtdauer an.
-	•	Zusammenführen von Segmenten: Fügt alle erfassten .ts-Dateien zu einer einzigen Videodatei zusammen.
-	•	Speichern als MP4: Die zusammengefügte Datei wird als .mp4 gespeichert.
+•	Automatische Aufnahme: Beginnt automatisch mit der Erfassung von .ts-Dateien, sobald eine Webseite geladen wird.
+•	Schnelles Laden: Überspringt automatisch durch das Video, um alle Segmente schnell zu laden.
+•	Live-Statusanzeige: Zeigt die Anzahl der erfassten Dateien und die geschätzte Gesamtdauer an.
+•	Zusammenführen von Segmenten: Fügt alle erfassten .ts-Dateien zu einer einzigen Videodatei zusammen.
+•	Speichern als MP4: Die zusammengefügte Datei wird als .mp4 gespeichert.
 
 Installation
 
 Voraussetzungen
 
-	•	Firefox Browser
+•	Firefox Browser
 
-Schritte zur Installation über about:debugging
+Installation über about:debugging
 
-	1.	Herunterladen des Addons
-	•	Laden Sie den Quellcode dieses Repositories herunter oder klonen Sie es.
-	2.	Öffnen von about:debugging
-	•	Geben Sie in der Adressleiste about:debugging#/runtime/this-firefox ein und drücken Sie die Eingabetaste.
-	3.	Aktivieren des Entwicklermodus
-	•	Klicken Sie auf “Diese Firefox” im linken Menü, falls nicht bereits ausgewählt.
-	4.	Addon laden
+1.	Addon herunterladen
+	•	Laden Sie den Quellcode dieses Repositories herunter oder klonen Sie es auf Ihren Computer.
+2.	Firefox öffnen
+	•	Geben Sie about:debugging#/runtime/this-firefox in die Adressleiste ein und drücken Sie die Eingabetaste.
+3.	Addon laden
 	•	Klicken Sie auf die Schaltfläche “Temporäres Add-on laden”.
 	•	Navigieren Sie zum Ordner des heruntergeladenen Addons und wählen Sie die Datei manifest.json aus.
-	5.	Bestätigung
-	•	Das Addon sollte nun in der Liste der geladenen temporären Addons erscheinen.
+4.	Bestätigung
+	•	Das Addon sollte nun in der Liste der geladenen temporären Addons erscheinen und einsatzbereit sein.
 
 Hinweis: Temporäre Addons werden beim Schließen von Firefox entfernt. Um das Addon dauerhaft zu installieren, müssten Sie es signieren oder den Entwicklermodus verwenden.
 
 Verwendung
 
-	1.	Webseite öffnen
+1.	Webseite öffnen
 	•	Navigieren Sie zu der Webseite mit dem Video, das Sie aufnehmen möchten.
-	2.	Automatische Aufnahme
+2.	Automatische Aufnahme
 	•	Die Aufnahme startet automatisch, sobald die Seite vollständig geladen ist.
-	3.	Video starten
+3.	Video starten
 	•	Starten Sie das Video auf der Webseite.
-	4.	Schnelles Laden starten
+4.	Schnelles Laden starten
 	•	Klicken Sie auf das Addon-Symbol in der Symbolleiste, um das Popup zu öffnen.
 	•	Klicken Sie auf die Schaltfläche “Schnelles Laden starten”, um das Video automatisch durchzuspringen und alle .ts-Dateien zu laden.
-	5.	Statusüberwachung
+5.	Statusüberwachung
 	•	Im Popup sehen Sie eine Live-Statusanzeige mit der Anzahl der erfassten Dateien und der geschätzten Gesamtdauer.
-	6.	Aufnahme stoppen
+6.	Aufnahme stoppen
 	•	Sobald das gesamte Video geladen ist oder Sie die Aufnahme beenden möchten, klicken Sie auf “Aufnahme stoppen” im Popup.
-	7.	Datei herunterladen
+7.	Datei herunterladen
 	•	Das Addon lädt die erfassten .ts-Dateien herunter, fügt sie zusammen und speichert die Datei als merged_video.mp4.
 
 Rechtlicher Hinweis
@@ -88,3 +75,5 @@ Support
 Bei Fragen oder Problemen öffnen Sie bitte ein Issue in diesem Repository.
 
 Vielen Dank für die Verwendung von TS File Recorder!
+
+Das Design wurde verbessert, um die Informationen klarer und ansprechender zu präsentieren. Das Inhaltsverzeichnis wurde entfernt, um die Übersichtlichkeit zu erhöhen.
